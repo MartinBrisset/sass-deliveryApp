@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__logo">
+           <img src="build/img/logo.svg" alt="logo">
+        </div>
+        <div class="navegacion">
+            <a href="#" class="navegacion__link">Iniciar Sesión</a>
+            <a href="#" class="navegacion__link">Crear Cuenta</a>
+            <a href="#" class="navegacion__link navegacion__link-registrar">Registrar Restaurante</a>
+        </div>
+    </header>
+
+    <section class="contenedor formulario">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2 class="formulario__heading">Encuentra y pide comida</h2>
+                <form class="formulario__buscar">
+                    <div class="formulario__campo">
+                        <label for="restaurante" class="formulario__label">Restaurante</label>
+                        <input id="restaurante" type="text" class="formulario__input" placeholder="Burger mvd">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="comida" class="formulario__label">Comida</label>
+                        <input id="comida" type="text" class="formulario__input" placeholder="Chivito, Pizza">
+                    </div>
+                    <input type="submit" name="buscar" id="buscar" class="formulario__submit" value="Buscar">
+                </form>
+            </div>
+            <div class="formulario__imagen-contenedor">
+                <img class="formulario__imagen" src="build/img/dibujo_repartidor.svg" alt="dibujo_repartidor">
+            </div>
+        </div>
+    </section>
+
+    <section class="pasos">
+        <img src="build/img/wave.svg" alt="ola" class="pasos__wave">
+        <div class="pasos__contenido">
+            <h2 class="pasos__heading">¿Cómo funciona? <span class="pasos__heading-span">tan fácil como 1, 2 y 3</span></h2>
+            <div class="pasos__grid contenedor">
+                <div class="pasos__paso">
+                    <picture>
+                        <source srcset="build/img/paso_1.avif"  type="image/avif" >
+                        <source srcset="build/img/paso_1.webp" type="image/webp">
+                        <img src="build/img/paso_1.jpg" loading="lazy" alt="" width="100%" heigth="100%" class="pasos__imagen">
+                    </picture>
+                </div>
+                <div class="pasos__paso">
+                    <picture>
+                        <source srcset="build/img/paso_2.avif" type="image/avif">
+                        <source srcset="build/img/paso_2.webp" type="image/webp">
+                        <img src="build/img/paso_2.jpg" loading="lazy" alt="" width="100%" heigth="100%" class="pasos__imagen">
+                    </picture>
+                </div>
+                <div class="pasos__paso">
+                    <picture>
+                        <source srcset="build/img/paso_3.avif" type="image/avif">
+                        <source srcset="build/img/paso_3.webp" type="image/webp">
+                        <img src="build/img/paso_3.jpg" loading="lazy" alt="" width="100%" heigth="100%" class="pasos__imagen">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor testimonios">
+        <h2 class="testimonios__heading">Testimonios</h2>
+        <div class="testimonios__grid">
+            <div class="testimonio">
+                <header class="testimonio__header">
+                    <div class="testimonio__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial1.avif" type="image/avif">
+                            <source srcset="build/img/testimonial1.webp" type="image/webp">
+                            <img src="build/img/testimonial1.jpg" loading="lazy" alt="img testimonio" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="testimonio__info">
+                        <p class="testimonio__autor">Jauncito</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%" class="testimonio__estrellas">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonio__texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga est maiores mollitia quasi. Vero doloribus mollitia aspernatur. Alias quibusdam animi commodi doloremque quos laborum deserunt. Nam, distinctio! Rerum, alias?
+                </blockquote>
+            </div>
+            <div class="testimonio">
+                <header class="testimonio__header">
+                    <div class="testimonio__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial2.avif" type="image/avif">
+                            <source srcset="build/img/testimonial2.webp" type="image/webp">
+                            <img src="build/img/testimonial2.jpg" loading="lazy" alt="img testimonio" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="testimonio__info">
+                        <p class="testimonio__autor">Jauncita</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%" class="testimonio__estrellas">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonio__texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga 
+                </blockquote>
+            </div>
+            <div class="testimonio">
+                <header class="testimonio__header">
+                    <div class="testimonio__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial3.avif" type="image/avif">
+                            <source srcset="build/img/testimonial3.webp" type="image/webp">
+                            <img src="build/img/testimonial3.jpg" loading="lazy" alt="img testimonio" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="testimonio__info">
+                        <p class="testimonio__autor">Robertito</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%" class="testimonio__estrellas">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonio__texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga est maiores mollitia quasi. Vero doloribus mollitia aspernatur. Alias quibusdam animi commodi doloremque quos laborum deserunt. Nam, distinctio! Rerum, atinctio! Rerum, atinctio! Rerum, atinctio! Rerum, alias?
+                </blockquote>
+            </div>
+            <div class="testimonio">
+                <header class="testimonio__header">
+                    <div class="testimonio__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial4.avif" type="image/avif">
+                            <source srcset="build/img/testimonial4.webp" type="image/webp">
+                            <img src="build/img/testimonial4.jpg" loading="lazy" alt="img testimonio" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="testimonio__info">
+                        <p class="testimonio__autor">Robertita</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%" class="testimonio__estrellas">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonio__texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga est maiores mollitia quasi. Vero doloribus mollitia aspernatur. Alias quibusdam animi commodi doloremque quos laborum deserunt. Nam, distinctio! Rerum, alias?
+                </blockquote>
+            </div>
+            <div class="testimonio">
+                <header class="testimonio__header">
+                    <div class="testimonio__imagen">
+                        <picture>
+                            <source srcset="build/img/testimonial5.avif" type="image/avif">
+                            <source srcset="build/img/testimonial5.webp" type="image/webp">
+                            <img src="build/img/testimonial5.jpg" loading="lazy" alt="img testimonio" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="testimonio__info">
+                        <p class="testimonio__autor">Sandrita</p>
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%" class="testimonio__estrellas">
+                        </picture>
+                    </div>
+                </header>
+                <blockquote class="testimonio__texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga est maiores mollitia quasi. Vero doloribus mollitia aspernatur. Alias quibusdam animi commodi doloremque quos laborum deserunt. Nam, distinctio! Rerum, alias?
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <main class="favoritos">
+        <h2 class="favoritos__heading">Restaurantes Favoritos</h2>
+        <div class="favoritos__grid contenedor">
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="favorito">
+                <div class="favorito__grid">
+                    <div class="favorito__imagen">
+                        <picture>
+                            <source srcset="build/img/logo_ensaladas.avif" type="image/avif">
+                            <source srcset="build/img/logo_ensaladas.webp" type="image/webp">
+                            <img src="build/img/logo_ensaladas.jpg" loading="lazy" alt="logo restaurante" width="100%" heigth="100%">
+                        </picture>
+                    </div>
+                    <div class="favorito__contenido">
+                        <picture>
+                            <source srcset="build/img/estrellas.avif" type="image/avif">
+                            <source srcset="build/img/estrellas.webp" type="image/webp">
+                            <img src="build/img/estrellas.jpg" loading="lazy" alt="estrellas" width="100%" heigth="100%">
+                        </picture>
+                        <h3 class="favorito__nombre">Green Ensaladas</h3>
+                        <p class="favorito__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quae explicabo eum commodi in. Alias qui fuga sed. Nobis laudantium libero labore perferendis voluptas pariatur similique recusandae eius at iusto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="repartidores">
+        <h2 class="repartidores__heading">
+            Gana dinero con App comida
+        </h2>
+        <div class="repartidores__grid contenedor">
+            <div class="repartidores__imagen">
+                <picture>
+                    <source srcset="build/img/repartidor.avif" type="image/avif">
+                    <source srcset="build/img/repartidor.webp" type="image/webp">
+                    <img src="build/img/repartidor.jpg" loading="lazy" alt="repartidor" width="100%" heigth="100%">
+                </picture>
+            </div>
+            <div class="repartidores__contenido">
+                <p class="repartidores__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, sapiente ratione laborum aliquid ut obcaecati rem cumque delectus temporibus maiores qui voluptatum incidunt sit fugit vero earum! Facilis, distinctio beatae!</p>
+                <p class="repartidores__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, sapiente ratione laborum aliquid ut obcaecati rem cumque delectus temporibus maiores qui voluptatum incidunt sit fugit vero earum! Facilis, distinctio beatae!</p>
+                <a href="#" class="repartidores__enlace">Más información</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="descargar">
+        <div class="descargar__grid contenedor">
+            <div class="descargar__imagen">
+                <picture>
+                    <source srcset="build/img/app.avif" type="image/avif">
+                    <source srcset="build/img/app.webp" type="image/webp">
+                    <img src="build/img/app.jpg" loading="lazy" alt="app" width="90%" heigth="90%">
+                </picture>
+            </div>
+            <div class="tiendas">
+                <h3 class="tiendas__heading">
+                    Descarga la App
+                </h3>
+                <p class="tiendas__texto">Disponibles para Android y iOS</p>
+                <div class="tiendas__grid">
+                    <a href="#" class="tiendas__enlace">
+                        <img src="build/img/tienda-apple.svg">
+                    </a>
+                    <a href="#" class="tiendas__enlace">
+                        <img src="build/img/tienda-android.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__box">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit, harum doloremque laboriosam cumque odit veritatis nihil iure obcaecati quae dolore soluta vitae, maxime et officiis ipsa voluptate aspernatur. Accusamus?</p>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__heading">Navegacion</h3>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Enlace 1</a>
+                    <a href="#" class="footer__link">Enlace 2</a>
+                    <a href="#" class="footer__link">Enlace 3</a>
+                    <a href="#" class="footer__link">Enlace 4</a>
+                    <a href="#" class="footer__link">Enlace 5</a>
+                    <a href="#" class="footer__link">Enlace 6</a>
+                </nav>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit, harum doloremque laboriosam cumque odit veritatis nihil iure obcaecati quae dolore soluta vitae, maxime et officiis ipsa voluptate aspernatur. Accusamus?</p>
+            </div>
+        </div>
+        <p class="footer__copy">&copy; Copyright 2022 - AppComida | Creado por: <a href="https://martinbrisset.com" target="_blank" title="MartínBrisset.com"> M.B.B.</a></p>
+    </footer>
+
+
+</body>
+</html>
